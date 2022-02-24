@@ -58,7 +58,10 @@ export const ProductCard = ({
         product,
       }}
     >
-      <div className={`${styles.productCard} ${className}`} style={style}>
+      <div
+        className={`${styles.productCard} ${className && className}`}
+        style={style}
+      >
         {children({
           count: counter,
           increaseBy,

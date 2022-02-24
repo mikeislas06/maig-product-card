@@ -27,7 +27,7 @@ export const ProductImage = ({ img = '', className, style }: Props) => {
 
   return (
     <img
-      className={`${styles.productImg} ${className}`}
+      className={`${styles.productImg} ${className && className}`}
       style={style}
       src={imgToShow}
       alt="Product"
